@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Data company</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="landing">
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Today everything is data</h2>
+							<p id="quote">Every day 2.5 Quintillion bytes of data are created.</p>
+							<ul class="actions">
+								<li><a href="#" class="button special">are you making the most of your data?</a></li>
+							</ul>
+						</div>
+					</section>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+
+			<script type="text/javascript">
+				var quotes = [
+					"A full 90% of all the data in the world has been generated over the last two years.",
+					"Every day 2.5 Quintillion bytes of data are created.",
+					"More data has been created in the past two years<br> than in the entire previous history of the human race."
+				];
+				var counter = 0;
+
+				function change_quote() {
+					var quote_elem = document.getElementById("quote");
+					quote_elem.innerHTML = quotes[counter];
+					counter++;
+					if(counter >= quotes.length) { counter = 0; }
+				}
+				setInterval(change_quote, 3000);
+			</script>
+	</body>
+</html>
